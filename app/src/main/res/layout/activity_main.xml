@@ -3,6 +3,7 @@
     android:id="@+id/pager"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:contextClickable="true"
     >
 
     <android.support.v4.view.PagerTitleStrip
@@ -10,15 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="15dp"
-        android:paddingTop="15dp"
-        android:background="@color/colorPrimary"
-
-
-        android:backgroundTintMode="src_in"
-
-        app:theme="@style/AppTheme"
-
-        ></android.support.v4.view.PagerTitleStrip>
+        android:paddingTop="20dp"
+        android:textDirection="firstStrong"
+        android:background="@color/colorPrimary">
+        </android.support.v4.view.PagerTitleStrip>
 
 
 </android.support.v4.view.ViewPager>
