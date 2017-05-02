@@ -13,6 +13,8 @@ import android.os.Environment;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +31,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -47,6 +51,7 @@ public class Personal_details extends android.support.v4.app.Fragment {
     int width, height;
     RadioButton male,female;
     RadioGroup radiogrp;
+    EditText mail;
     View myView;
 
     @Nullable
@@ -56,6 +61,10 @@ public class Personal_details extends android.support.v4.app.Fragment {
         imageView = (ImageView) myView.findViewById(R.id.imageview);
         buttonCamera = (Button) myView.findViewById(R.id.capturebtn);
         buttonGallery = (Button) myView.findViewById(R.id.browsebtn);
+
+        RadioGroup radioGroup= (RadioGroup) myView.findViewById(R.id.radiobtn);
+
+
         buttonCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -144,6 +153,7 @@ public class Personal_details extends android.support.v4.app.Fragment {
             CropIntent.putExtra("outputY", 180);
             CropIntent.putExtra("aspectX", 3);
             CropIntent.putExtra("aspectY", 4);
+
             CropIntent.putExtra("scaleUpIfNeeded", true);
             CropIntent.putExtra("return-data", true);
 
@@ -157,7 +167,10 @@ public class Personal_details extends android.support.v4.app.Fragment {
     //Image Crop Code End Here
     public void RadioButtonChecked() {
 
+
     }
-}
+
+    }
+
 
 
