@@ -116,10 +116,11 @@
                                 android:text="First Name" />
 
                             <EditText
+                                android:id="@+id/firstname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="text"
 
+                                android:inputType="text"
                                 tools:layout_marginLeft="30dp" />
                         </LinearLayout>
 
@@ -136,6 +137,7 @@
                                 android:text="Last Name" />
 
                             <EditText
+                                android:id="@+id/lastname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 tools:layout_marginLeft="30dp" />
@@ -154,6 +156,7 @@
                                 android:text="Country" />
 
                             <EditText
+                                android:id="@+id/country"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="text"
@@ -182,6 +185,7 @@
                                 tools:layout_marginLeft="30dp" />
 
                             <EditText
+                                android:id="@+id/dob"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="datetime|date" />
@@ -220,6 +224,7 @@
                                 android:text="Mobile No." />
 
                             <EditText
+                                android:id="@+id/mobile"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="phone"
@@ -419,5 +424,15 @@
             </RelativeLayout>
 
         </ScrollView>
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="495dp"
+        android:text="submit" />
 
 </RelativeLayout>

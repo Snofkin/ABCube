@@ -54,6 +54,7 @@ public class Personal_details extends android.support.v4.app.Fragment {
     EditText mail;
     View myView;
 
+
     @Nullable
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable final ViewGroup container, Bundle savedInstanceState) {
@@ -61,9 +62,6 @@ public class Personal_details extends android.support.v4.app.Fragment {
         imageView = (ImageView) myView.findViewById(R.id.imageview);
         buttonCamera = (Button) myView.findViewById(R.id.capturebtn);
         buttonGallery = (Button) myView.findViewById(R.id.browsebtn);
-
-        RadioGroup radioGroup= (RadioGroup) myView.findViewById(R.id.radiobtn);
-
 
         buttonCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,13 +161,6 @@ public class Personal_details extends android.support.v4.app.Fragment {
 
         }
     }
-
-    //Image Crop Code End Here
-    public void RadioButtonChecked() {
-
-
-    }
-
     }
 
 
