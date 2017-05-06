@@ -56,7 +56,7 @@
                     android:text="Date of Test" />
 
                 <EditText
-                    android:id="@+id/dob"
+                    android:id="@+id/testdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
@@ -178,7 +178,12 @@
                     android:inputType="number|numberDecimal" />
             </LinearLayout>
 
-
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/submitenglish"
+    android:layout_below="@+id/linear8"
+    android:text="submit"/>
         </RelativeLayout>
     </ScrollView>
     </android.support.v7.widget.CardView>

@@ -58,6 +58,7 @@ public class Emergency extends Fragment {
                 relation = Relationship.getText().toString();
                 address = Address.getText().toString();
                 phone = Phone_no.getText().toString();
+
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, server_url, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -82,7 +83,9 @@ public class Emergency extends Fragment {
                         Toast.makeText(getActivity(), error.toString(), Toast.LENGTH_SHORT).show();
                         error.printStackTrace();
                     }
+
                 }) {
+
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String, String> params = new HashMap<String, String>();
@@ -94,6 +97,7 @@ public class Emergency extends Fragment {
                         return params;
                     }
                 };
+
                 Mysingleton.getInstance(getActivity()).addToRequest(stringRequest);
             }
 

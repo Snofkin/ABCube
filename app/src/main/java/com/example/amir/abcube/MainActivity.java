@@ -25,10 +25,9 @@ import android.widget.Toast;
 import java.io.File;
 
 public class MainActivity extends FragmentActivity {
-    ImageView imageView;
-    Button button;
 
     ViewPager viewPager = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +37,7 @@ public class MainActivity extends FragmentActivity {
         viewPager = (ViewPager) findViewById(R.id.pager);
         FragmentManager fragmentManager = getSupportFragmentManager();
         viewPager.setAdapter(new MyAdapter(fragmentManager));
-
+    }
 
     }
 
@@ -82,7 +81,7 @@ public class MainActivity extends FragmentActivity {
                 return "English Language";
             }
             if (position == 2) {
-                return "Educationa Background";
+                return "Educational Background";
             }
             if (position == 3) {
                 return "Emergency Contact";
@@ -90,5 +89,9 @@ public class MainActivity extends FragmentActivity {
             return null;
         }
     }
-}
+
+
+
+
+
 

@@ -2,12 +2,29 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.amir.abcube.MainActivity">
 
-
+    <com.alexzh.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="192dp"
+        android:layout_height="192dp"
+        android:clickable="true"
+        android:src="@mipmap/amir"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:view_backgroundColor="@color/colorPrimary"
+        app:view_shadowRadius="4dp"
+        app:view_shadowDx="2dp"
+        app:view_shadowDy="0dp"
+        app:view_shadowColor="@color/cardview_dark_background"
+        app:view_borderWidth="4dp"
+        app:view_selectedColor="@color/colorAccent"
+        app:view_borderColor="@android:color/darker_gray"/>
 
         <ScrollView
             android:layout_width="match_parent"

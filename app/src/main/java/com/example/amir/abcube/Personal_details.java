@@ -30,6 +30,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alexzh.circleimageview.CircleImageView;
+
 import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -41,7 +43,7 @@ import static android.app.Activity.RESULT_OK;
  */
 
 public class Personal_details extends android.support.v4.app.Fragment {
-    ImageView imageView;
+   ImageView imageView;
     Button buttonCamera, buttonGallery;
     File file;
     Uri uri;
@@ -59,7 +61,7 @@ public class Personal_details extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable final ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.personal_details, container, false);
-        imageView = (ImageView) myView.findViewById(R.id.imageview);
+        imageView  = (ImageView) myView.findViewById(R.id.imageview);
         buttonCamera = (Button) myView.findViewById(R.id.capturebtn);
         buttonGallery = (Button) myView.findViewById(R.id.browsebtn);
 

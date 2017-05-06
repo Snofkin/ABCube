@@ -62,10 +62,11 @@
                                 android:text="Name" />
 
                             <EditText
+                                android:id="@+id/schoolname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:inputType="text"
 
+                                android:inputType="text"
                                 tools:layout_marginLeft="30dp" />
                         </LinearLayout>
 
@@ -82,6 +83,7 @@
                                 android:text="Marks" />
 
                             <EditText
+                                android:id="@+id/schoolmarks"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="number|numberDecimal"
@@ -101,6 +103,7 @@
                                 android:text="Year of Award" />
 
                             <EditText
+                                android:id="@+id/schoolaward"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="text|date"
@@ -160,6 +163,7 @@
                                 tools:layout_marginLeft="30dp" />
 
                             <EditText
+                                android:id="@+id/highschoolname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="text" />
@@ -178,6 +182,7 @@
                                 android:text="Marks" />
 
                             <EditText
+                                android:id="@+id/highschoolmarks"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="textEmailAddress|number|numberDecimal"
@@ -197,6 +202,7 @@
                                 android:text="Year of Award" />
 
                             <EditText
+                                android:id="@+id/highscchoolaward"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="date"
@@ -247,6 +253,7 @@
                                 android:text="Name" />
 
                             <EditText
+                                android:id="@+id/bachelorname"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="text"
@@ -266,6 +273,7 @@
                                 android:text="Marks" />
 
                             <EditText
+                                android:id="@+id/bachelormarks"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="number|numberDecimal"
@@ -286,6 +294,7 @@
                                 android:text="Year of Award" />
 
                             <EditText
+                                android:id="@+id/bacheloryear"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="30dp"
@@ -336,6 +345,7 @@
                                 android:text="Name" />
 
                             <EditText
+                                android:id="@+id/mastername"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:inputType="text"
@@ -355,6 +365,7 @@
                                 android:text="Marks" />
 
                             <EditText
+                                android:id="@+id/mastermarks"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 tools:layout_marginLeft="30dp" />
@@ -374,12 +385,19 @@
                                 android:text="Year of Award" />
 
                             <EditText
+                                android:id="@+id/masteryear"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="30dp" />
                         </LinearLayout>
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/okbtn"
+                    android:text="ok"
+                    android:layout_below="@+id/cardview3"/>
 
             </RelativeLayout>
 
